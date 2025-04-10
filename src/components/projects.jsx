@@ -98,7 +98,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://cyclegen-pro-2.vercel.app/"
+                    href="https://cyclegen-pro-2-bqnnvzf23-suryadammalapas-projects.vercel.app/"
                     className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 hover:underline"
                   >
                     <Github size={16} /> Code
