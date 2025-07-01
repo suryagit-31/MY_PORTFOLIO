@@ -47,7 +47,7 @@ const Herosection = () => {
                 <StarIcon className="inline h-4 text-yellow-400" />
               </h2>
               <h4 className="text-xl text-gray-600 dark:text-gray-300 mb-6 font-semibold">
-                Python Programmer - MERN Stack{" "}
+                MERN STACK- GOLANG- JAVASCRIPT
               </h4>
 
               <div className="prose prose-lg dark:prose-invert mb-8">

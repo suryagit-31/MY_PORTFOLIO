@@ -4,9 +4,22 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     id: 1,
+    role: "SOFTWARE DEVELEPOMENT INTERN - REDBUS BANGLORE ",
+    company: "REDBUS,INDIA",
+    period: "MAY 2025- Present",
+    responsibilities: [
+      "SDE Intern in Centralised API Team (CAPI) at Redbus HQ ,Bengaluru",
+      "Worked on Several Tech Stacks like Java 21 , JavaScript ,Golang ,React js",
+      "Worked with Team to Migrate Apis From Centralised Search  Code base to Anvesha Service making Search for Bus Locations faster by 80 %",
+      "Integrated Event Fields  on PRCMS Redbus Offers Using .NET CORE  Making it Easier to Use",
+      "Made whole CAPITOOL Responsive and Updated Falcon and Mpax Cache clear Service in capi tool to Clear Cache from Servers In Oneclick ",
+    ],
+  },
+  {
+    id: 2,
     role: "BACKEND DEVELOPER INTERN",
     company: "The Good Game Theory",
-    period: "February 2025 - Present",
+    period: "February 2025 - MAY 2025",
     responsibilities: [
       "Developed RESTful APIs using React and Node.js",
       "Worked with a team to design and implement database schemas",
@@ -40,9 +53,9 @@ const Experience = () => {
                 <h3 className="text-2xl font-bold mb-2 text-emerald-700 dark:text-emerald-300">
                   {exp.role}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <h1 className="text-white-600 dark:text-gray-400 mb-4">
                   {exp.company} • {exp.period}
-                </p>
+                </h1>
                 <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-3">
                   {exp.responsibilities.map((task, index) => (
                     <li key={index}>{task}</li>
