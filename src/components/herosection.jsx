@@ -97,7 +97,7 @@ const Herosection = () => {
                   React.js
                 </span>
                 <span className="px-4 py-2 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm font-medium">
-                  Node.js
+                  Golang
                 </span>
                 <span className="px-4 py-2 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm font-medium">
                   Python

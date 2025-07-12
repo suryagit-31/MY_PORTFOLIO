@@ -2,7 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, ExternalLink } from "lucide-react";
 import wechat from "../assets/wechat.png";
-import { Menu, X, Bike } from "lucide-react";
+import Gobuddy from "../assets/Gobuddy.png";
+import {
+  Menu,
+  X,
+  Bike,
+  PlaneTakeoff,
+  Plane,
+  GlobeLock,
+  Lightbulb,
+} from "lucide-react";
 
 const Projects = () => {
   return (
@@ -22,19 +31,83 @@ const Projects = () => {
             >
               <div className="h-48 overflow-hidden">
                 <img
-                  src={wechat}
+                  src={Gobuddy}
                   alt="Project 1"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-emerald-700 dark:text-emerald-300">
-                  (WE CHAT) Real-time Message App
+                <h3 className="text-xl font-bold mb-3 text-emerald-700 dark:text-emerald-300 flex items-center gap-2">
+                  Go buddy <Plane />- Flight Companion Finder
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  WE CHAT IS A full stack messaging app devloped using MERN AND
-                  SOCKET.IO FOR REAL-TIME CHAT.
-                </p>
+                <div className="text-white-600 dark:text-white-400 mb-4 flex-col gap-y-4">
+                  <p className="flex items-center">
+                    My parents had Trouble in Aeroplane Journey, as they are not
+                    Familiar with the Long process. So I came up with an idea
+                  </p>
+                  <p>
+                    Go Buddy Connects the Companions in Same filght, to have a
+                    Safe and Comfrtable Journey for Elderly People
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                    React Js
+                  </span>
+                  <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                    Javascript
+                  </span>
+                  <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                    AviationStack
+                  </span>
+                  <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                    RestApi
+                  </span>
+                </div>
+                <div className="flex gap-4">
+                  <a
+                    href="https://github.com/suryagit-31/Go_buddy"
+                    className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 hover:underline"
+                  >
+                    <Github size={16} /> Code
+                  </a>
+                  <a
+                    href="https://go-buddy-1.onrender.com/"
+                    className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 hover:underline"
+                  >
+                    <ExternalLink size={16} /> Demo
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl group hover:shadow-2xl transition-all duration-300 border border-emerald-100 dark:border-emerald-800/30"
+            >
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={wechat}
+                  alt="Project 2"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3 text-emerald-700 dark:text-emerald-300 flex items-center gap-2">
+                  We CHAT <GlobeLock />- Real-time Message App
+                </h3>
+                <div className="text-white-600 dark:text-white-400 mb-4 flex-col gap-y-4">
+                  <p className="flex items-center">
+                    Me and MY friends always wanted a Secret Chat app to chat
+                    beacuse everyone uses Whatsapp and Instagram
+                  </p>
+                  <p>
+                    We chat is a Secure,Real-time Messaging App, where you can
+                    chat with your friends.
+                  </p>
+                </div>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
                     Javascript
@@ -73,7 +146,7 @@ const Projects = () => {
               <div className="h-48 overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                  alt="Project 2"
+                  alt="Project 3"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
@@ -81,10 +154,12 @@ const Projects = () => {
                 <h3 className="text-xl flex space-x-1 font-bold mb-3 text-emerald-700 dark:text-emerald-300">
                   Cycle-GEN <Bike />
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  A Modern ECO-Friendly cycle booking website and innovative
-                  design
-                </p>
+                <div className="text-white-600 dark:text-white-400 mb-4 flex-col gap-y-4">
+                  <p className="flex items-center">
+                    Cycle-GEN is a Cycle booking app Group project
+                  </p>
+                  <p>Cycle gen Sales Modrenised Cycles for all age groups</p>
+                </div>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
                     React
