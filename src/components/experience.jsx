@@ -7,7 +7,7 @@ const experiences = [
     id: 1,
     role: "SOFTWARE DEVELEPOMENT INTERN - REDBUS BANGLORE ",
     company: `REDBUS ,INDIA (Capi Team) `,
-    period: "MAY 2025- Present",
+    period: "MAY 5 2025- Aug 1 2025",
     responsibilities: [
       "SDE Intern in Centralised API Team (CAPI) at Redbus HQ ,Bengaluru",
       "Worked on Several Tech Stacks like Java 21 , JavaScript ,Golang ,React js",

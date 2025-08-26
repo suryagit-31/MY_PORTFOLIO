@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, ExternalLink } from "lucide-react";
 import wechat from "../assets/wechat.png";
 import Gobuddy from "../assets/Gobuddy.png";
+import job_posting from "../assets/job_posting.jpg";
+import ClientMeeting from "../assets/ClientMeeting.jpeg";
 import {
   Menu,
   X,
@@ -11,6 +13,7 @@ import {
   Plane,
   GlobeLock,
   Lightbulb,
+  Briefcase,
 } from "lucide-react";
 
 const Projects = () => {
@@ -73,7 +76,7 @@ const Projects = () => {
                     <Github size={16} /> Code
                   </a>
                   <a
-                    href="https://go-buddy-1.onrender.com/"
+                    href="https://go-buddy-2.vercel.app/"
                     className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 hover:underline"
                   >
                     <ExternalLink size={16} /> Demo
@@ -139,6 +142,64 @@ const Projects = () => {
               </div>
             </motion.div>
 
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl group hover:scale-110 hover:shadow-[0_10px_25px_rgba(16,185,129,0.4)] transition-transform duration-300 border border-emerald-100 dark:border-emerald-800/30"
+            >
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={ClientMeeting}
+                  alt="Project 2"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3 text-emerald-700 dark:text-emerald-300 flex items-center gap-2">
+                  CarrerFind <Briefcase /> -Job posting using Web 3
+                </h3>
+                <div className="text-white-600 dark:text-white-400 mb-4 flex-col gap-y-4">
+                  <p className="flex items-center">
+                    Job searching and Posting is Difficult these days
+                  </p>
+                  <p>
+                    Carrer Find is a Secure, Online Job posting Poratal
+                    ,payments are made using Meta mask and Solana making it Fast
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                    React
+                  </span>
+                  <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                    WEB 3
+                  </span>
+                  <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                    Metamask
+                  </span>
+                  <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-800/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                    Blockchain
+                  </span>
+                </div>
+                <div className="flex gap-4">
+                  <a
+                    href="https://github.com/suryagit-31/Careerfind_Riseos"
+                    className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 hover:underline"
+                  >
+                    <Github size={16} /> Code
+                  </a>
+                  <a
+                    href="https://careerfind-riseos.vercel.app/"
+                    className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 hover:underline"
+                  >
+                    <ExternalLink size={16} /> Demo
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Cycle-GEN Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -160,7 +221,7 @@ const Projects = () => {
                 </h3>
                 <div className="text-white-600 dark:text-white-400 mb-4 flex-col gap-y-4">
                   <p className="flex items-center">
-                    Cycle-GEN is a Cycle booking app Group project
+                    Cycle-GEN is a Frontend Cycle booking app Group project
                   </p>
                   <p>Cycle gen Sales Modernised Cycles for all age groups</p>
                 </div>

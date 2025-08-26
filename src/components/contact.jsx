@@ -21,7 +21,7 @@ const Contact = () => {
             className="space-y-8"
           >
             <a
-              href="https://drive.google.com/file/d/12z1d-MvzLG2p0A2C2hiA37me-iQZ_LqG/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lGj9yYadjoyFiawXdvzrr-v-OWduXIEk/view?usp=sharing"
               className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl"
             >
               <FileText size={24} />

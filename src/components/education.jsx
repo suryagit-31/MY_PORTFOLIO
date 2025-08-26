@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from "react";
+import { motion } from "framer-motion";
 
 const Education = () => {
   return (
@@ -27,7 +27,7 @@ const Education = () => {
                 Bachelor of Science in Computer Science • 2022 - Present
               </p>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                <li> GPA: 7.0</li>
+                <li> GPA: 7.23</li>
                 <li> Memeber of Web development club- BetaLabs IIITK</li>
                 <li>Lead of Cinevedika Film Club IIITK </li>
               </ul>
@@ -61,6 +61,6 @@ const Education = () => {
       </section>
     </div>
   );
-}
+};
 
-export default Education
+export default Education;
